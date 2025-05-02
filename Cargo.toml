@@ -1,0 +1,5 @@
+[workspace]
+members = [ "coreutils/echo", "coreutils/exit", "coreutils/ls",
+    "shell",
+]
+resolver = "3"
