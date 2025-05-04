@@ -1,7 +1,7 @@
 [workspace]
 members = [ "coreutils/cat", "coreutils/cp",
     "coreutils/echo",
-    "coreutils/ls",
+    "coreutils/ls", "coreutils/mkdir",
     "coreutils/pwd",
     "shell"
 ]
