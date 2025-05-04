@@ -1,5 +1,5 @@
 [workspace]
-members = [
+members = [ "coreutils/cat",
     "coreutils/echo",
     "coreutils/ls",
     "coreutils/pwd",
