@@ -2,7 +2,7 @@
 members = [ "coreutils/cat", "coreutils/cp",
     "coreutils/echo",
     "coreutils/ls", "coreutils/mkdir", "coreutils/mv",
-    "coreutils/pwd",
+    "coreutils/pwd", "coreutils/rm",
     "shell"
 ]
 resolver = "3"
