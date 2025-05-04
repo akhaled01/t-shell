@@ -1,5 +1,8 @@
 [workspace]
-members = [ "coreutils/echo", "coreutils/exit", "coreutils/ls",
-    "shell",
+members = [
+    "coreutils/echo",
+    "coreutils/ls",
+    "coreutils/pwd",
+    "shell"
 ]
 resolver = "3"
