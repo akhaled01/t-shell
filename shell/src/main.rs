@@ -29,7 +29,7 @@ fn main() {
         if input == "exit" {
             break;
         } else if input == "cd" {
-            shell::utils::cd("-");
+            shell::utils::cd("~");
             continue;
         } else if input.starts_with("cd ") {
             let path = &input[3..];
