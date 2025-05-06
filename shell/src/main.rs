@@ -41,6 +41,6 @@ fn main() {
         let bin_name = args[0];
         let args = &args[1..];
 
-        shell::exec::execute_command(bin_name, args, &shell_args.get_path());
+        shell::exec::execute_command(bin_name, args, &shell_args.get_path(), shell_args.production);
     }
 }

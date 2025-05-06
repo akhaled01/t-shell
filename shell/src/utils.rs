@@ -22,7 +22,11 @@ pub fn cd(path: &str) {
         if Path::new(path).exists() {
             env::set_current_dir(path).unwrap();
         } else {
-            println!("Path {} does not exist", path);
+            if path == "~" || path.trim().is_empty() {
+                env::set_current_dir(env::var("HOME").unwrap()).unwrap();
+            } else {
+                println!("Path {} does not exist", path);
+            }
         }
     }
     unsafe {

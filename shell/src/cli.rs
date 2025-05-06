@@ -13,7 +13,8 @@ impl Cli {
         if self.production {
             env::var("PATH").unwrap()
         } else {
-            String::from("./target/debug/")
+            let home = env::var("HOME").unwrap();
+            format!("{}/target/debug", home)
         }
     }
 }
