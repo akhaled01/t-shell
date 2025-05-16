@@ -14,7 +14,7 @@ impl Cli {
             env::var("PATH").unwrap()
         } else {
             let home = env::var("HOME").unwrap();
-            format!("{}/target/debug", home)
+            format!("{}/target/release", home)
         }
     }
 }

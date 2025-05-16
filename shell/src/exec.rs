@@ -10,7 +10,7 @@ fn lookup_bin(bin_name: &str, path: &str, is_prod: bool) -> Option<String> {
     if !is_prod {
         // In non-prod mode, check the local coreutils first
         let home = env::var("HOME").unwrap();
-        let local_bin = format!("{}/01/tsh/target/debug/{}", home, bin_name);
+        let local_bin = format!("{}/01/tsh/target/release/{}", home, bin_name);
         if Path::new(&local_bin).exists() {
             return Some(local_bin);
         }
